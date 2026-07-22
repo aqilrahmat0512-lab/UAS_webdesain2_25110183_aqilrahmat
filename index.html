@@ -1,112 +1,172 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMKM Jual Mobil Bekas</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobil Auto Mall Pekanbaru</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
-    <h1>🚗 Mobil Auto Mall Pekanbaru</h1>
-    <p>Mobil Murah • Berkualitas • Bergaransi</p>
+    <div class="logo">
+        🚗 <h1>Arengka Auto Mall Pekanbaru</h1>
+        <p>Mobil Murah • Berkualitas • Bergaransi</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#mobil">Mobil</a></li>
+            <li><a href="#promo">Promo</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Mobil</a>
-    <a href="#">Promo</a>
-    <a href="#">Kontak</a>
-</nav>
+<!-- HOME -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h2>Temukan Mobil Impian Anda</h2>
+        <p>Dapatkan mobil bekas berkualitas dengan harga terbaik.</p>
 
-<section class="hero">
-    <h2>Temukan Mobil Impian Anda</h2>
-    <button onclick="pesan()">Pesan Sekarang</button>
+        <button onclick="pesanSekarang()">
+            Pesan Sekarang
+        </button>
+    </div>
 </section>
 
-<section class="produk">
+<!-- MOBIL -->
+<section id="mobil">
+
+<h2>Daftar Mobil</h2>
+
+<div class="card-container">
 
 <div class="card">
-<img src="1.jpg">
-<h3>Toyota Avanza 2022</h3>
-<p>Rp 180.000.000</p>
-<button onclick="beli('Toyota Avanza')">Beli</button>
+<img src="avanza.jpg" alt="">
+<h3>Toyota Avanza</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp185.000.000</p>
+<button onclick="pesanMobil('Toyota Avanza')">Pesan</button>
 </div>
 
 <div class="card">
-<img src="2.jpg">
-<h3>Honda Brio 2021</h3>
-<p>Rp 165.000.000</p>
-<button onclick="beli('Honda Brio')">Beli</button>
+<img src="brio.jpg" alt="">
+<h3>Honda Brio</h3>
+<p>Tahun : 2023</p>
+<p>Harga : Rp205.000.000</p>
+<button onclick="pesanMobil('Honda Brio')">Pesan</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500" alt="">
-<h3>Daihatsu Xenia</h3>
-<p>Rp 155.000.000</p>
-<button onclick="beli('Daihatsu Xenia')">Beli</button>
-</div>
-
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500" alt="">
-<h3>Toyota Avanza 2022</h3>
-<p>Rp 180.000.000</p>
-<button onclick="beli('Toyota Avanza')">Beli</button>
+<img src="xpander.jpg" alt="">
+<h3>Mitsubishi Xpander</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp265.000.000</p>
+<button onclick="pesanMobil('Xpander')">Pesan</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500" alt="">
-<h3>Toyota Avanza 2022</h3>
-<p>Rp 180.000.000</p>
-<button onclick="beli('Toyota Avanza')">Beli</button>
-</div>
+<img src="innova.jpg" alt="">
+<h3>Toyota Inova</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp354.000.000</p>
+<button onclick="pesanMobil('Toyota Innova')">Pesan</button>
+</div><div class="card">
 
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500" alt="">
-<h3>Toyota Avanza 2022</h3>
-<p>Rp 180.000.000</p>
-<button onclick="beli('Toyota Avanza')">Beli</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500" alt="">
-<h3>Toyota Avanza 2022</h3>
-<p>Rp 180.000.000</p>
-<button onclick="beli('Toyota Avanza')">Beli</button>
+<img src="pajero.jpg" alt="">
+<h3>Pajero sport</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp545.000.000</p>
+<button onclick="pesanMobil('Pajero sport')">Pesan</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500" alt="">
-<h3>Toyota Avanza 2022</h3>
-<p>Rp 180.000.000</p>
-<button onclick="beli('Toyota Avanza')">Beli</button>
+<img src="fortuner.jpg" alt="">
+<h3>Toyota fortuner</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp567.000.000</p>
+<button onclick="pesanMobil('Toyota fortuner')">Pesan</button>
 </div>
 
+<div class="card">
+<img src="l300.jpg" alt="">
+<h3>Mitsubishi L300</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp150.000.000</p>
+<button onclick="pesanMobil('MitsubishiL300')">Pesan</button>
+</div>
+
+<div class="card">
+<img src="zenix.jpg" alt="">
+<h3>Innova Zenix</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp450.000.000</p>
+<button onclick="pesanMobil('Innova Zenix')">Pesan</button>
+</div>
+
+<div class="card">
+<img src="ertiga.jpg" alt="">
+<h3>Ertiga</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp120.000.000</p>
+<button onclick="pesanMobil('Ertiga')">Pesan</button>
+</div>
+
+<div class="card">
+<img src="karimun.jpg" alt="">
+<h3>Karimun</h3>
+<p>Tahun : 2022</p>
+<p>Harga : Rp80.000.000</p>
+<button onclick="pesanMobil('Karimun')">Pesan</button>
+</div>
+
+</div>
 
 </section>
 
-<section class="kontak">
+<!-- PROMO -->
+<section id="promo" class="promo">
+
+<h2>Promo Bulan Ini</h2>
+
+<ul>
+<li>🎉 DP Mulai 10%</li>
+<li>🎉 Gratis Service 1 Tahun</li>
+<li>🎉 Bonus Karpet & Kaca Film</li>
+<li>🎉 Cicilan Ringan</li>
+</ul>
+
+</section>
+
+<!-- KONTAK -->
+<section id="kontak">
+
 <h2>Hubungi Kami</h2>
 
-<form onsubmit="return kirim()">
+<form>
 
-<input type="text" id="nama" placeholder="Nama" required>
+<input type="text" placeholder="Nama" required>
 
-<input type="email" id="email" placeholder="Email" required>
+<input type="email" placeholder="Email" required>
 
-<textarea id="pesan" placeholder="Pesan"></textarea>
+<textarea placeholder="Pesan"></textarea>
 
-<button type="submit">Kirim</button>
+<button type="submit">
+Kirim Pesan
+</button>
 
 </form>
 
 </section>
 
 <footer>
-<p>© 2026 UMKM Mobil Bekas Indonesia</p>
+
+<p>© 2026 Mobil Auto Mall Pekanbaru</p>
+
 </footer>
 
 <script src="script.js"></script>
