@@ -6,6 +6,104 @@ font-family:Arial;
 }
 
 body{
+background:#f4f4f4;
+}
+
+header{
+background:#003366;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+nav{
+background:#0066cc;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:yellow;
+}
+
+.hero{
+height:400px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(#003366,#3399ff);
+color:white;
+}
+
+button{
+padding:12px 25px;
+background:red;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+margin-top:15px;
+}
+
+button:hover{
+background:green;
+}
+
+.produk{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.card{
+background:white;
+width:250px;
+margin:20px;
+padding:15px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+section{
+padding:40px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+}
+
+footer{
+background:#003366;
+color:white;
+padding:15px;
+text-align:center;
+margin-top:30px;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
 background:#f5f5f5;
 }
 
@@ -165,4 +263,159 @@ color:white;
 text-align:center;
 padding:20px;
 margin-top:30px;
+}
+/* PROMOSI */
+
+.promo{
+padding:60px 30px;
+background:#f5f5f5;
+text-align:center;
+}
+
+.promo h2{
+font-size:35px;
+color:#003366;
+margin-bottom:15px;
+}
+
+.promo p{
+margin-bottom:40px;
+font-size:18px;
+}
+
+.promo-box{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+}
+
+.promo-card{
+width:260px;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.promo-card:hover{
+transform:translateY(-10px);
+}
+
+.promo-card h3{
+color:#0066cc;
+margin-bottom:15px;
+}
+
+.promo-card p{
+font-size:16px;
+margin-bottom:20px;
+}
+
+.promo-card button{
+padding:10px 20px;
+background:#ff3b30;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:15px;
+}
+
+.promo-card button:hover{
+background:#00aa55;
+}
+
+/* HALAMAN KONTAK */
+
+.kontak{
+padding:60px 40px;
+background:#f4f4f4;
+text-align:center;
+}
+
+.kontak h2{
+color:#003366;
+font-size:35px;
+margin-bottom:10px;
+}
+
+.kontak p{
+margin-bottom:30px;
+}
+
+.kontak-box{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.info{
+width:320px;
+background:#003366;
+color:white;
+padding:25px;
+border-radius:10px;
+text-align:left;
+}
+
+.info h3{
+margin-bottom:20px;
+}
+
+.info p{
+margin-bottom:20px;
+}
+
+.form{
+width:450px;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.form input,
+.form textarea{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:15px;
+}
+
+.form textarea{
+height:120px;
+resize:none;
+}
+
+.form button{
+width:100%;
+padding:12px;
+background:#ff3b30;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.form button:hover{
+background:#00aa55;
+}
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#ff3b30;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#00aa55;
 }
