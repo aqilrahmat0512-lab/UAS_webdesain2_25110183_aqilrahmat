@@ -487,3 +487,17 @@ background:#00aa55;
 .hero button{
     margin-top:30px;
 }
+maps-btn{
+    display:inline-block;
+    margin:15px 0;
+    padding:12px 20px;
+    background:#4285F4;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.maps-btn:hover{
+    background:#0b63d1;
+}
