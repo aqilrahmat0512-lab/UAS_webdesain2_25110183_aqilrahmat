@@ -501,15 +501,17 @@ maps-btn{
 .maps-btn:hover{
     background:#0b63d1;
 }
-.maps-btn,
-.maps-btn:link,
-.maps-btn:visited{
-    color:red !important;
+.maps-btn{
+    display:inline-block;
+    margin:15px 0;
+    color:red;
     text-decoration:none;
+    font-size:18px;
     font-weight:bold;
+    transition:0.3s;
 }
 
 .maps-btn:hover{
-    color:#cc0000 !important;
+    color:#ff6666;
     text-decoration:underline;
 }
